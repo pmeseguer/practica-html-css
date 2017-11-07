@@ -1,0 +1,71 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --color-text: #000000;
+    --color-nav: #ffffff;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background-color: var(--color-text);*/
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.nav-fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--color-text);
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    width: 65vw;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    margin: 0px;
+}
+ .nav-list > .nav-list-item a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 40px;
+    /*background-color: var(--color-text);*/
+    color: var(--color-nav);
+    transition: all 0.5s linear;
+}
+.nav-list > .nav-list-item a:hover{
+    background-color: var(--color-nav);
+    color: var(--color-text);
+}
+.nav-li-img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-img{
+    width: 40px;
+    height: 40px;
+    transition-duration: 0.05s;
+}
+.nav-img:hover{
+    width: 37px;
+    height: 37px;
+}

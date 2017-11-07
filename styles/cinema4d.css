@@ -1,0 +1,57 @@
+@font-face{
+    font-family: cinema-letra;
+    src: (../varios/Cinematografica-Extralight-trial.ttf);
+}
+.nav-espacio{
+    width: 100%;
+    height: 50px;
+}
+.fondo-video{
+    width: 100%;
+    height: calc(100vh - 150px);
+    background-size:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/fondo-video.jpg);
+    position:absolute;
+    top: 0px;
+    left: 0p
+}
+.section-video{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+.section-video-video{
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.letra-cinema{
+    color: white;
+    font-size: 100px;
+    font-family: cinema-letra;
+    margin: 0px;
+}
+.cinema-video{
+    width: calc(calc(43vh*16)/9);
+    height: 43vh;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

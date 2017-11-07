@@ -1,0 +1,170 @@
+@font-face{
+    font-family: titulo;
+    src: url(../varios/CaviarDreams.ttf)
+}
+@font-face{
+    font-family: cinema-letra;
+    src: (../varios/Cinematografica-Extralight-trial.ttf);
+}
+.dosese{
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-name: dos;
+    animation-fill-mode: both;
+}
+@keyframes dos{
+    0%{ opacity: 0;}
+    100%{visibility: visible;}
+}
+.unoese{
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: uno;
+    animation-fill-mode: both;
+}
+@keyframes uno{
+    0%{ opacity: 0;}
+    100%{opacity: 1;
+        visibility: visible;}
+}
+.epacio-header{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    /*background-color: white;*/
+    position: relative;
+}
+.header-img{
+    width: 100%;
+    height: 100vh;
+    background-size:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/headera.jpg);
+    position:absolute;
+    top: 0px;
+    left: 0p
+}
+.header-img-degra{
+    width: 100%;
+    height: 100vh;
+    background-size:100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/header-degradado.png);
+    z-index: 1;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+.title{
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
+    font-family: titulo;
+    font-size: 5vw;
+    z-index: 2;
+}
+.espacio{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.dosier{
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh-50px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: black;
+    /*background-image: linear-gradient(90deg, white,black, black,black,black,black, black, white);*/
+
+}
+.dosier-cajas{
+    margin: 1vh 1vh;
+    width: calc(calc(43vh*1280)/720);
+    height: 43vh;
+    background-color: black;
+    position: relative;
+}
+.dosier-gif{
+    width: calc(calc(43vh*1280)/720);
+    height: 43vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: 1s;
+    border-width: 1px;
+    border-color: rgb(141, 141, 141);
+    border-style: solid;
+    box-shadow: 0px 0px 7px rgb(112, 217, 255);
+}
+.dosier-gif:hover {
+    opacity: 0.4;
+}
+.dosier-cajas-cinema{
+    position: absolute;
+    top: 0px;
+    width: calc(calc(43vh*1280)/720);
+    height: 43vh;
+    /*background-color: green;*/
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: 1s;
+}
+.dosier-cajas-cinema:hover{
+    opacity: 1;
+    transform: translateY(20px);
+}
+.enl-cine-titulo{
+    opacity: 0.8;
+    background-color: black;
+    border-radius: 20px;
+    padding: 0px 1.5vh;
+    font-family: cinema-letra;
+    margin: 2vh;
+    font-size: 9vh;
+    color: rgb(159, 244, 255);
+    align-self: center;
+}
+.enl-cine-texto{
+    width: calc(calc(42vh*1280)/720);
+    opacity: 0.8;
+    background-color: black;
+    margin-bottom: 5vh;
+    margin-left: 1.5vh;
+    padding-right: 0px;
+    font-size: 3vh;
+    color: white;
+}
+.enl-cine-enl{
+    opacity: 0.8;
+    background-color: black;
+    color: rgb(255, 255, 151);
+}
+.footer{
+    width: vw;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.enlace{
+    width: calc(calc(43vh*1280)/720);
+    height: 43vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+}
